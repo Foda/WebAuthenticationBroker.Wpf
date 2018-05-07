@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2043
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAuthenticationBroker.Desktop", "WebAuthenticationBroker.Wpf\WebAuthenticationBroker.Desktop.csproj", "{5ADD0578-C5E6-44EA-BBCB-9D0D84C9B79A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAuthenticationBroker.Wpf.Demo", "WebAuthenticationBroker.Wpf.Demo\WebAuthenticationBroker.Wpf.Demo.csproj", "{D6EE2D06-0DEC-4FDE-833C-E490F98B2294}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5ADD0578-C5E6-44EA-BBCB-9D0D84C9B79A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5ADD0578-C5E6-44EA-BBCB-9D0D84C9B79A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5ADD0578-C5E6-44EA-BBCB-9D0D84C9B79A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5ADD0578-C5E6-44EA-BBCB-9D0D84C9B79A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D6EE2D06-0DEC-4FDE-833C-E490F98B2294}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6EE2D06-0DEC-4FDE-833C-E490F98B2294}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6EE2D06-0DEC-4FDE-833C-E490F98B2294}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6EE2D06-0DEC-4FDE-833C-E490F98B2294}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0F27A9A8-170D-48E3-8E9D-DF8C5DCB1AFA}
+	EndGlobalSection
+EndGlobal
