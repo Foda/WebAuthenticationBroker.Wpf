@@ -32,8 +32,8 @@ namespace WebAuthenticationBroker.Wpf.Demo
             //http://localhost:58293/
 
             var startUri = new Uri(
-                string.Format("https://bitbucket.org/site/oauth2/authorize?client_id={0}&response_type=token",
-                "3SEANy8Ur7rSsNEPWD"));
+                string.Format("https://bitbucket.org/site/oauth2/authorize?client_id={0}&response_type=token&redirect_uri={1}",
+                "3SEANy8Ur7rSsNEPWD", "http://localhost:58293/"));
 
             var endUri = new Uri("http://localhost:58293/");
 

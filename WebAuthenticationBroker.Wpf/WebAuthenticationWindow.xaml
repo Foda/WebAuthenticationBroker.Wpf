@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WebAuthenticationBroker.Desktop"
         mc:Ignorable="d" ResizeMode="NoResize"
-        Title="WebAuthenticationWindow" Height="600" Width="600">
+        Title="Connecting to a service" Width="650" Height="560">
     <Grid>
         
     </Grid>

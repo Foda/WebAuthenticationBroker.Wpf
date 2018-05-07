@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
@@ -34,8 +35,7 @@ namespace WebAuthenticationBroker.Desktop
                     new WindowInteropHelper(webViewWindow).Handle.ToInt64(),
                     new Windows.Foundation.Rect(0, 0, webViewWindow.ActualWidth, webViewWindow.ActualHeight));
 
-                webViewControl.Navigate(requestUri);
-                webViewControl.NavigationCompleted += (s, e) =>
+                webViewControl.NavigationStarting += (s, e) =>
                 {
                     // Check for the Uri first -- localhost will give a 404
                     // but we might already have the data we want
@@ -44,12 +44,18 @@ namespace WebAuthenticationBroker.Desktop
                         responseData = e.Uri.ToString();
                         webViewWindow.DialogResult = true;
                     }
-                    else if (!e.IsSuccess)
+                };
+
+                webViewControl.NavigationCompleted += (s, e) =>
+                {
+                    if (!e.IsSuccess)
                     {
                         webViewWindow.DialogResult = false;
                         responseCode = (uint)e.WebErrorStatus;
                     }
                 };
+
+                webViewControl.Navigate(requestUri);
             };
 
             var dialogResult = await ShowDialogAsync(webViewWindow);
